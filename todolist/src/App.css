@@ -1,0 +1,90 @@
+/* Apply a gradient background to the entire page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #70efeb, #efc244);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.home h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create_form {
+  margin-bottom: 20px;
+}
+
+.create_form input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(100% - 90px); /* Adjust width to fit the input and button */
+}
+
+.create_form button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.create_form button:hover {
+  background-color: #0056b3;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox .icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.icon2 {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .create_form {
+    flex-direction: row;
+  }
+
+  .create_form input {
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: calc(100% - 90px);
+  }
+}
